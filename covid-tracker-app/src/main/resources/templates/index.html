@@ -1,38 +1,19 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-<header th:replace="~{fragments/header :: header}">
-</header>
+<!DOCTYPE HTML>
+<html lang="en" xmlns:layout="http://www.w3.org/1999/xhtml" layout:decorate="~{fragments/main_layout}">
+<head>
+    <title>Spring Boot Thymeleaf + Spring Security</title>
+</head>
+<body>
+<div layout:fragment="content" class="container">
 
-  <body>
-      <!-- ============================================================================ -->
-      <!-- This content is only used for static prototyping purposes (natural templates)-->
-      <!-- and is therefore entirely optional, as this markup fragment will be included -->
-      <!-- from "fragments/header.html" at runtime.                                     -->
-      <!-- ============================================================================ -->
-      <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Static header</a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="hero-unit">
-        <h1>Test</h1>
+    <div class="jumbotron">
+        <h2>Empty Main Page</h2>
+        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work.
+            It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
         <p>
-          Welcome to the Spring MVC Quickstart application!
-          Get started quickly by signing up.
+            <a class="btn btn-lg btn-primary" href="/world/home" role="button">World Covid Count &raquo;</a>
         </p>
-
-      </div>
-      <div th:replace="fragments/footer :: footer">&copy; 2016 The Static Templates</div>
     </div>
-  </body>
+</div>
+</body>
 </html>

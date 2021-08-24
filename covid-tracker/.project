@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>epl-batch-examples</name>
+	<name>covid-tracker</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -22,7 +22,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1619114832558</id>
+			<id>1619085187823</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
