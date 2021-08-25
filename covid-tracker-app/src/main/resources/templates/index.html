@@ -1,19 +1,27 @@
-<!DOCTYPE HTML>
-<html lang="en" xmlns:layout="http://www.w3.org/1999/xhtml" layout:decorate="~{fragments/main_layout}">
-<head>
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns:layout="http://www.w3.org/1999/xhtml"
+  layout:decorate="~{fragments/main_layout}"
+>
+  <head>
     <title>Spring Boot Thymeleaf + Spring Security</title>
-</head>
-<body>
-<div layout:fragment="content" class="container">
-
-    <div class="jumbotron">
+  </head>
+  <body>
+    <div layout:fragment="content" class="container">
+      <div class="jumbotron">
         <h2>Empty Main Page</h2>
-        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work.
-            It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
         <p>
-            <a class="btn btn-lg btn-primary" href="/world/home" role="button">World Covid Count &raquo;</a>
+          This example is a quick exercise to illustrate how the default, static
+          navbar and fixed to top navbar work. It includes the responsive CSS
+          and HTML, so it also adapts to your viewport and device.
         </p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="/world/home" role="button"
+            >World Covid Count &raquo;</a
+          >
+        </p>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>

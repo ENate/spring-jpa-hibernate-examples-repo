@@ -26,4 +26,10 @@ public class HomeController {
 
         return "world/home";
     }
+
+    @GetMapping("/signup/signup")
+    public String showSignUpForm() {
+        return "signup/register";
+    }
 }
+// https://github.com/codebyamir-zz/spring-boot-user-account-registration/blob/master/user-account-registration/src/main/resources/application.properties
