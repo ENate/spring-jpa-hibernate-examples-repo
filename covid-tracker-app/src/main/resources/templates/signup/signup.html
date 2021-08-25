@@ -24,7 +24,7 @@
 
   <div class="middle-box text-center loginscreen animated fadeInDown">
     <div>
-      
+
       <h4>New User Registration</h4>
 
       <form autocomplete="off" action="#" th:action="@{/signup/signup}"
@@ -46,7 +46,7 @@
         <div th:if="${#fields.hasErrors('lastName')}"
           th:errors="*{lastName}"
           class="validation-message alert alert-danger" role="alert"></div>
-        
+
                 <div th:if="${#fields.hasErrors('email')}" th:errors="*{email}"
           class="validation-message alert alert-danger" role="alert"></div>
 
@@ -56,7 +56,7 @@
           <span class="input-group-addon">
             <span class="glyphicon glyphicon-user"></span>
           </span>
-          
+
           <input type="text" th:field="*{firstName}"
             placeholder="First Name" class="form-control" required />
           <span class="glyphicon form-control-feedback"
@@ -83,18 +83,18 @@
             aria-hidden="true"></span>
 
         </div>
-       
+
         <button type="submit"
           class="btn btn-primary block full-width m-b">Register</button>
 
       </form>
-     
+
     </div>
   </div>
 
  <!-- jQuery-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    
+
   <!-- Bootstrap -->
   <script
     src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -104,6 +104,6 @@
   <!-- Bootstrap Validator plugin -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 
- 
+
 </body>
 </html>

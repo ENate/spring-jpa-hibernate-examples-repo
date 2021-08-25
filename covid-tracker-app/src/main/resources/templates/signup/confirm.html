@@ -21,14 +21,14 @@
 
 	<link th:href="@{css/style.css}" rel="stylesheet" />
 	<link th:href="@{css/fv.css}" rel="stylesheet" />
-	
+
 </head>
 
 <body class="gray-bg">
 
   <div class="middle-box text-center loginscreen animated fadeInDown">
     <div>
-    
+
       <hr />
       <h4>Set Your Password</h4>
 
@@ -37,7 +37,7 @@
 
       <div th:if="${errorMessage}" class="alert alert-danger"
         role="alert" th:text=${errorMessage}></div>
-        
+
       <div th:if="${invalidToken}" class="alert alert-danger"
         role="alert" th:text=${invalidToken}></div>
 
@@ -50,7 +50,7 @@
           <span class="input-group-addon">
             <span class="glyphicon glyphicon-lock"></span>
           </span>
-          <input name="password" type="password" id="password"  
+          <input name="password" type="password" id="password"
             placeholder="Password" class="form-control" required />
           <span class="glyphicon"
             aria-hidden="true"></span>
@@ -65,19 +65,19 @@
                                        data-fv-identical="true"
                                        data-fv-identical-field="password"
                                        data-fv-identical-message="Both passwords must be identical" />
-                   
+
           <div class="help-block with-errors"></div>
         </div>
 
 
-		
+
         <button type="submit"
           class="btn btn-primary block full-width m-b">Save
         </button>
 
       </form>
 
-     
+
     </div>
   </div>
 
@@ -91,9 +91,9 @@
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
 
-  
+
   <script src="//cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
-  
+
   <script th:src="@{js/fv.min.js}"></script>
   <script>
 		$(document).ready(function() {
@@ -105,7 +105,7 @@
 		            validating: 'glyphicon glyphicon-refresh'
 		        },
 		        fields: {
-		        
+
 		            password: {
 		                validators: {
 		                    notEmpty: {
