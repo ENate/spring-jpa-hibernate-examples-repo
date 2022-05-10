@@ -7,7 +7,7 @@ tasks:
     init: echo 'init script' # runs during prebuild
     command: echo 'start script'
   - name: create-mysql-user
-    command: mysql -e "CREATE DATABASE order_service;" && mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root_password';"
+    command: mysql -e "CREATE DATABASE demo_db;" && mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root_pwd';"
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
