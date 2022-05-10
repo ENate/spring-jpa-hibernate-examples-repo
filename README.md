@@ -1,4 +1,4 @@
-# Spring, hibernate, JPA, Thymleaf Examples
+# Spring, springJPA, hibernate, spring security, Thymleaf etc
 
 An example of a Spring boot application together with JPA, REST, Web, thymleaf and spring security.
  To run the application, a knowledge of spring is required. 
