@@ -1,8 +1,13 @@
 # Spring, hibernate, JPA, Thymleaf Examples
 
-Examples of Spring JPA, REST, Webflux, Thymleaf, etc
+An example of a Spring boot application together with JPA, REST, Web, thymleaf and spring security.
+ To run the application, a knowledge of spring is required. 
 
-## Main folders
+## Contents of the main repo
 
-- A covid Application in the ``covid-tracker`` project.
-- A Cricket dashboard in ``pl-dashboard`` project.
+- A covid Application in the ``covid-tracker`` project consisting of the following tools:
+
+- Mysql database
+- spring security
+- Thymeleaf for templating
+
